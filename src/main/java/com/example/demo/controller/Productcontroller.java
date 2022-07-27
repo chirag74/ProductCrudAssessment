@@ -34,13 +34,13 @@ public class Productcontroller {
 		public List<Product> findAll(){
 			return proService.findAll();
 		}
-//		@PostMapping("/saveProduct")
-//		public String saveEmployee(@RequestBody Product pro) {
-////			emp.setEmpno(0);
-////			empService.saveOrUpdate(emp);
-//
-//			return "Employee details added successfully!!!";
-//		}
+		@PostMapping("/saveProduct")
+		public String saveEmployee(@RequestBody Product pro) {
+			emp.setEmpno(0);
+			empService.saveOrUpdate(emp);
+
+			return "Employee details added successfully!!!";
+		}
 
 		@PutMapping("/updateProduct")
 		public String updateProduct(@RequestBody Product pro) throws Exception {
